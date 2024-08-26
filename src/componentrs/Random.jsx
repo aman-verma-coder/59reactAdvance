@@ -5,9 +5,9 @@ import useGif from "../hooks/useGif.js";
 const API_KEY=import.meta.env.VITE_REACT_APP_GIPHY_API_KEY;
 const Random=()=>{
     const {gif,loading,fetchData}=useGif();
-    function clickHandler() {
-        fetchData();
-    }
+    // function clickHandler() {
+    //     fetchData();
+    // }
     return(
         <div className="w-1/2 bg-green-400 rounded-lg border border-black flex flex-col items-center gap-y-5 mt-[15px]">
             <h1 className="mt-[15px] text-2xl underline uppercase font-bold">Random Gif</h1>

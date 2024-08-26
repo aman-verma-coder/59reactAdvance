@@ -11,11 +11,11 @@ const useGif = (tag) => {
         const imageSource = data.data.images.downsized_large.url;
         setGif(imageSource);
         setLoading(false);
-        // console.log(imageSource);
+        console.log('Tag Data',imageSource);
     }
     useEffect(() => {
         fetchData();
-    }, []);
+    }, [tag]);
     return { gif, loading, fetchData };
 };
 export default useGif;
